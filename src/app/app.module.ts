@@ -6,10 +6,13 @@ import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
 
 import { PLATFORM_ID, APP_ID, Inject } from '@angular/core'
-import { isPlatformBrowser } from '@angular/common'
+import { isPlatformBrowser } from '@angular/common';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { BsNavComponent } from './bs-nav/bs-nav.component'
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AboutComponent, HomeComponent, BsNavComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-universal-seo' }),
     AppRoutingModule
